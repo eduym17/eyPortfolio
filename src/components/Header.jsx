@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="containerContent flex flex-row justify-evenly items-center p-4 md:p-6">
+      <div className="containerContent flex flex-row justify-between md:justify-evenly items-center p-4 md:p-6">
         <a href="/">
           <img
             src={iconLogo}
@@ -114,14 +114,14 @@ const Header = () => {
           </a>
         </div>
         <div className="md:flex items-center gap-4 md:gap-6 hidden">
-            <a href={CVEYM} download>
+          <a href={CVEYM} download>
 
-              <img
-                src={iconResume}
-                alt={iconResume}
-                className="h-4 md:h-5"
-              />
-            </a>
+            <img
+              src={iconResume}
+              alt={iconResume}
+              className="h-4 md:h-5"
+            />
+          </a>
           <a
             href="https://www.linkedin.com/in/eduym17/"
             target="_blank"
