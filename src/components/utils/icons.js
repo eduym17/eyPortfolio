@@ -28,9 +28,10 @@ import iconLogstash from '../../assets/icons/icon-logstash.svg';
 import iconPowerShell from '../../assets/icons/icon-powershell.svg';
 import iconTerraform from '../../assets/icons/icon-terraform.svg';
 import iconJava from '../../assets/icons/icon-java.svg';
+import iconResume from '../../assets/icons/resume-icon.svg';
 
 export {
   iconLogo, iconImago, iconLinkedIn, iconGitHub, iconTwitter, iconCSS3, iconExpress, iconFigma,
   iconGit, iconHTML5, iconIllustrator, iconJavaScript, iconJest, iconMongoDB, iconNodeJS,
-  iconPhotoshop, iconPostgreSQL, iconReact, iconVue, iconAzureDevOps, iconAzure, iconBash, iconElasticSearch, iconGitHubActions, iconJenkins, iconKibana, iconLogstash, iconPowerShell, iconTerraform, iconJava
+  iconPhotoshop, iconPostgreSQL, iconReact, iconVue, iconAzureDevOps, iconAzure, iconBash, iconElasticSearch, iconGitHubActions, iconJenkins, iconKibana, iconLogstash, iconPowerShell, iconTerraform, iconJava, iconResume
 };
