@@ -27,7 +27,7 @@ const Home = () => (
     <div className="containerFullWidth">
       <div
         id="home"
-        className="containerContent justify-   pt-20 pb-24 md:flex md:justify-center md:items-center md:gap-4 md:pl-[2%] md:pt-24 md:pb-20"
+        className="containerContent justify-center pt-20 pb-24 md:flex md:justify-center md:items-center md:gap-4 md:pt-24 md:pb-20"
       >
         <div className="flex flex-col items-center w-[90%] md:w-4/5 md:items-center">
           <TitleSpaceWordGeneral
@@ -40,13 +40,13 @@ const Home = () => (
             magicWord="DevOps"
             customClass="text-center"
           />
-          <p className="w-full leading-none font-extralight opacity-5 md:w-full md:text-lg text-center">
-            sometimes DevOops, sometimes Developer...
+          <p className="w-full leading-none font-extralight opacity-50 pt-4 md:w-full md:text-lg text-center">
+            Automation passionate.
           </p>
-          <div className="hidden md:flex justify-end w-full pt-14 text-lg">
+          <div className="hidden md:flex justify-end w-full pt-14 text-lg ">
             <a
               href="/#contact"
-              className="flex items-center gap-2 border-b-2 hover:text-dev-aqua hover:border-dev-aqua lg:text-xl"
+              className="flex items-center gap-2 pb-1 border-b-2 border-transparent hover:border-dev-aqua transition-all duration-500 lg:text-xl"
             >
               <p>Contact me</p>
               <svg
@@ -71,7 +71,7 @@ const Home = () => (
           <div className="flex items-start justify-end w-full pt-14 md:hidden">
             <a
               href="/#contact"
-              className="flex items-center justify-end gap-2 border-b-2 hover:text-dev-aqua hover:border-dev-aqua"
+              className="flex items-center justify-end gap-2 border-b-2 hover:border-dev-aqua"
             >
               <p>Contact me</p>
               <svg
@@ -87,6 +87,20 @@ const Home = () => (
             </a>
           </div>
         </div>
+          <div className="w-[90%] flex flex-wrap justify-center pt-8 gap-2 md:w-full md:flex-row md:gap-10">
+            <div className="flex gap-1 items-center md:gap-3">
+              <div className="font-extrabold text-4xl text-dev-gray-10 md:text-5xl hover:text-dev-aqua">04+</div>
+              <div className="text-dev-gray-30 text-sm w-20 md:text-base md:w-24 hover:text-dev-gray-10">years of experience</div>
+            </div>
+            <div className="flex gap-1 items-center md:gap-3">
+              <div className="font-extrabold text-4xl text-dev-gray-10 md:text-5xl hover:text-dev-aqua">10+</div>
+              <div className="text-dev-gray-30 text-sm w-20 md:text-base md:w-24 hover:text-dev-gray-10">projects completed</div>
+            </div>
+            <div className="flex gap-1 items-center md:gap-3">
+              <div className="font-extrabold text-4xl text-dev-gray-10 md:text-5xl hover:text-dev-aqua">05+</div>
+              <div className="text-dev-gray-30 text-sm w-20 md:text-base md:w-24 hover:text-dev-gray-10">countries engaged</div>
+            </div>
+          </div>
       </div>
     </div>
     <div className="containerFullWidth bg-dev-blue">
