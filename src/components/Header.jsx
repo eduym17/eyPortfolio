@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="containerContent flex flex-row justify-between md:justify-evenly items-center p-4 md:p-6">
+      <div className="containerContent flex flex-row justify-between md:justify-between items-center p-4 md:p-6">
         <a href="/">
           <img
             src={iconLogo}
@@ -42,7 +42,7 @@ const Header = () => {
         </a>
         <button
           type="button"
-          className={`md:hidden transition-all duration-1000 absolute right-3 top-6 rounded-md ${menu ? null : ' py-1 pl-3 pr-1 bg-dev-violet'}`}
+          className={`md:hidden transition-all duration-500 absolute right-3 top-6 rounded-md ${menu ? null : ' py-1 pl-3 pr-1 bg-dev-violet'}`}
           onKeyUp={(e) => enterHandlesMenu(e)}
           onBlur={(e) => blurHandler(e)}
         >
@@ -60,13 +60,39 @@ const Header = () => {
               <a href="/#contact" className="hover:text-dev-aqua">
                 Contact
               </a>
-              <div className="flex items-center gap-1 hover:text-dev-aqua">
-                <a href={CVEYM} download>
-                  Resume
+              <div className="md:hidden items-center gap-1 md:gap-1 flex">
+                <a href={CVEYM} download className="border-2 border-transparent p-1 rounded-full hover:border-dev-aqua transition-colors duration-300">
+
+                  <img
+                    src={iconResume}
+                    alt={iconResume}
+                    className="h-4 md:h-5"
+                  />
                 </a>
-                <svg width="15px" height="15px" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="m12 20l-8-8l1.4-1.425l5.6 5.6V4h2v12.175l5.6-5.6L20 12Z" />
-                </svg>
+                <a
+                  href="https://www.linkedin.com/in/eduym17/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="border-2 border-transparent p-1 rounded-full hover:border-dev-aqua transition-colors duration-300"
+                >
+                  <img
+                    src={iconLinkedIn}
+                    alt={iconLinkedIn}
+                    className="h-6 md:h-7"
+                  />
+                </a>
+                <a
+                  href="https://github.com/eduym17"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="border-2 border-transparent p-1 rounded-full hover:border-dev-aqua transition-colors duration-300"
+                >
+                  <img
+                    src={iconGitHub}
+                    alt={iconGitHub}
+                    className="h-6 md:h-7"
+                  />
+                </a>
               </div>
             </div>
             <svg
@@ -87,34 +113,34 @@ const Header = () => {
             </svg>
           </div>
         </button>
-        <div className="hidden md:flex gap-5 font-medium">
+        <div className="hidden md:flex gap-5 font-medium text-lg">
           <a
             href="/#aboutMe"
-            className="text-dev-gray-40 hover:text-dev-white"
+            className="text-dev-gray-40 hover:text-dev-white pb-1 border-b-2 border-transparent hover:border-dev-aqua transition-all duration-500"
           >
             About me
           </a>
           <a
             href="/#projects"
-            className="text-dev-gray-40 hover:text-dev-white"
+            className="text-dev-gray-40 hover:text-dev-white pb-1 border-b-2 border-transparent hover:border-dev-aqua transition-all duration-500"
           >
             Projects
           </a>
           <a
             href="/#stack"
-            className="text-dev-gray-40 hover:text-dev-white"
+            className="text-dev-gray-40 hover:text-dev-white pb-1 border-b-2 border-transparent hover:border-dev-aqua transition-all duration-500"
           >
             My stack
           </a>
           <a
             href="/#contact"
-            className="text-dev-gray-40 hover:text-dev-white"
+            className="text-dev-gray-40 hover:text-dev-white pb-1 border-b-2 border-transparent hover:border-dev-aqua transition-all duration-500"
           >
             Contact
           </a>
         </div>
-        <div className="md:flex items-center gap-4 md:gap-6 hidden">
-          <a href={CVEYM} download>
+        <div className="md:flex items-center gap-4 md:gap-1 hidden">
+          <a href={CVEYM} download className="border-2 border-transparent p-3 rounded-full hover:border-dev-aqua transition-colors duration-300">
 
             <img
               src={iconResume}
@@ -126,6 +152,7 @@ const Header = () => {
             href="https://www.linkedin.com/in/eduym17/"
             target="_blank"
             rel="noreferrer"
+            className="border-2 border-transparent p-3 rounded-full hover:border-dev-aqua transition-colors duration-300"
           >
             <img
               src={iconLinkedIn}
@@ -137,6 +164,7 @@ const Header = () => {
             href="https://github.com/eduym17"
             target="_blank"
             rel="noreferrer"
+            className="border-2 border-transparent p-3 rounded-full hover:border-dev-aqua transition-colors duration-300"
           >
             <img
               src={iconGitHub}
