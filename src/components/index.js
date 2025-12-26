@@ -6,8 +6,9 @@ import TitleAquaWordGeneral from './TitleAquaWordGeneral';
 import ClickToTop from './ClickToTop';
 import ProjectCard from './ProjectCard';
 import FormContact from './FormContact';
+import SummaryKPI from './SummaryKPI';
 
 export {
   Header, Footer, TitleSpaceWordGeneral, TitleSpaceWordMain, TitleAquaWordGeneral, ClickToTop,
-  ProjectCard, FormContact,
+  ProjectCard, FormContact, SummaryKPI
 };

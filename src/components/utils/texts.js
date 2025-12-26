@@ -27,3 +27,18 @@ export const infoPokedex = {
   linkRepo: 'https://github.com/eduym17/lxFePracticePokedex',
   isRepoDisabled: false,
 };
+
+export const infoKpis = {
+  experience: {
+    number: '04+',
+    description: 'years of experience'
+  },
+  projects: {
+    number: '10+',
+    description: 'projects completed'
+  },
+  countries: {
+    number: '05+',
+    description: 'countries engaged'
+  },
+};

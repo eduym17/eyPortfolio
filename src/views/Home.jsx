@@ -3,9 +3,9 @@ import {
 } from '../components/utils/images';
 import {
   TitleSpaceWordMain, TitleSpaceWordGeneral, TitleAquaWordGeneral, ClickToTop, ProjectCard,
-  FormContact,
+  FormContact, SummaryKPI
 } from '../components';
-import { infoDevStore, infoInSitu, infoPokedex } from '../components/utils/texts';
+import { infoDevStore, infoInSitu, infoPokedex, infoKpis } from '../components/utils/texts';
 import {
   iconCSS3, iconExpress, iconFigma, iconGit, iconHTML5, iconIllustrator, iconJavaScript,
   iconJest, iconMongoDB, iconNodeJS, iconPhotoshop, iconPostgreSQL, iconReact, iconVue, iconAzureDevOps,
@@ -27,7 +27,7 @@ const Home = () => (
     <div className="containerFullWidth">
       <div
         id="home"
-        className="containerContent justify-center pt-20 pb-24 md:flex md:justify-center md:items-center md:gap-4 md:pt-24 md:pb-20"
+          className="containerContent justify-center pt-20 pb-24 md:flex md:justify-center md:items-center md:gap-4 md:pt-24 md:pb-20"
       >
         <div className="flex flex-col items-center w-[90%] md:w-4/5 md:items-center">
           <TitleSpaceWordGeneral
@@ -87,19 +87,22 @@ const Home = () => (
             </a>
           </div>
         </div>
-          <div className="w-[90%] flex flex-wrap justify-center pt-8 gap-2 md:w-full md:flex-row md:gap-10">
-            <div className="flex gap-1 items-center md:gap-3">
-              <div className="font-extrabold text-4xl text-dev-gray-10 md:text-5xl hover:text-dev-aqua">04+</div>
-              <div className="text-dev-gray-30 text-sm w-20 md:text-base md:w-24 hover:text-dev-gray-10">years of experience</div>
-            </div>
-            <div className="flex gap-1 items-center md:gap-3">
-              <div className="font-extrabold text-4xl text-dev-gray-10 md:text-5xl hover:text-dev-aqua">10+</div>
-              <div className="text-dev-gray-30 text-sm w-20 md:text-base md:w-24 hover:text-dev-gray-10">projects completed</div>
-            </div>
-            <div className="flex gap-1 items-center md:gap-3">
-              <div className="font-extrabold text-4xl text-dev-gray-10 md:text-5xl hover:text-dev-aqua">05+</div>
-              <div className="text-dev-gray-30 text-sm w-20 md:text-base md:w-24 hover:text-dev-gray-10">countries engaged</div>
-            </div>
+          <div className="w-[90%] flex flex-wrap justify-center pt-8 gap-3 md:w-full md:flex-row md:gap-10">
+            <SummaryKPI
+              number={infoKpis.experience.number}
+              description={infoKpis.experience.description}
+              customClassDescription="w-16"
+              />
+            <SummaryKPI
+              number={infoKpis.projects.number}
+              description={infoKpis.projects.description}
+              customClassDescription="w-14"
+              />
+            <SummaryKPI
+              number={infoKpis.countries.number}
+              description={infoKpis.countries.description}
+              customClassDescription="w-12"
+            />
           </div>
       </div>
     </div>
